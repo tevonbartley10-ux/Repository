@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tevon Bartley | Personal Portfolio</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css">
+    
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- NAVIGATION -->
+    <nav>
+        <div class="nav-container">
+            <div class="logo"><span>Tevon</span> Bartley</div>
+            
+            <div class="links">
+                <a href="#home" class="active">Home</a>
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#services">Services</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </div>
+
+            <button class="hamburger" onclick="hamburg()" aria-label="Open navigation">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+
+        <!-- MOBILE DROPDOWN -->
+        <div class="dropdown" id="dropdownMenu">
+            <a href="#home" onclick="cancel()">Home</a>
+            <a href="#about" onclick="cancel()">About</a>
+            <a href="#skills" onclick="cancel()">Skills</a>
+            <a href="#services" onclick="cancel()">Services</a>
+            <a href="#projects" onclick="cancel()">Projects</a>
+            <a href="#contact" onclick="cancel()">Contact</a>
+            <button class="close-menu" onclick="cancel()" aria-label="Close navigation">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section id="home">
+        <div class="main-container">
+            <div class="content">
+                <h1>Hello, I'm <br><span>Tevon Bartley</span></h1>
+                <h2>I'm an <span>IT Support Technician </span></h2>
+                <p>
+                    Welcome to my personal portfolio. I am interested in
+                    technology, computer systems, troubleshooting, and
+                    learning new IT skills. Explore my projects and discover
+                    what I have been working on.
+                </p>
+
+                <div class="social-links">
+                    <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-linkedin"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="social-github"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="social-instagram"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+
+                <!-- DOWNLOAD CV BUTTON -->
+                <a href="cv.docx" class="btn download-btn" download="cv.docx">
+                    <i class="fa-solid fa-download"></i> Download CV
+                </a>
+            </div>
+
+            <div class="image-wrapper">
+                <div class="glow-ring"></div>
+                <div class="image">
+                    <img src="images/IMG_8605 (1).PNG" alt="Tevon Bartley">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about" class="section">
+        <div class="section-heading">
+            <h2>About <span>Me</span></h2>
+            <p>Get to know me</p>
+        </div>
+
+        <div class="about-grid">
+            <div class="about-text">
+                <h3>Who I Am</h3>
+                <p>
+                    My name is Tevon Bartley, and I am studying IT Support.
+                    I enjoy learning about computers, operating systems,
+                    software, and networking.
+                </p>
+                <p>
+                    I chose this field because I enjoy solving problems,
+                    learning about technological progress, and understanding
+                    how computer systems work.
+                </p>
+                <p>
+                    My goal is to continue improving my technical skills
+                    and develop the knowledge needed to work in the
+                    information technology field.
+                </p>
+            </div>
+
+            <div class="about-image">
+                <div class="tech-graphic-frame">
+                    <div class="laptop-screen">
+                        <span class="code-symbol">&lt;/&gt;</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SKILLS SECTION -->
+    <section id="skills" class="section">
+        <div class="section-heading">
+            <h2>My <span>Skills</span></h2>
+            <p>What I am learning</p>
+        </div>
+
+        <div class="skills-container">
+            <div class="skill-card">
+                <i class="fa-brands fa-windows"></i>
+                <h3>Windows</h3>
+                <p>Windows installation, configuration, and troubleshooting.</p>
+            </div>
+            <div class="skill-card">
+                <i class="fa-brands fa-linux"></i>
+                <h3>Linux</h3>
+                <p>Linux commands, file management, and terminal navigation.</p>
+            </div>
+            <div class="skill-card">
+                <i class="fa-solid fa-network-wired"></i>
+                <h3>Networking</h3>
+                <p>IP addresses, network devices, and basic connectivity.</p>
+            </div>
+            <div class="skill-card">
+                <i class="fa-solid fa-screwdriver-wrench"></i>
+                <h3>IT Support</h3>
+                <p>Technical troubleshooting and solving computer problems.</p>
+            </div>
+            <div class="skill-card">
+                <i class="fa-brands fa-html5"></i>
+                <h3>HTML</h3>
+                <p>Creating and organizing web page content.</p>
+            </div>
+            <div class="skill-card">
+                <i class="fa-brands fa-css3-alt"></i>
+                <h3>CSS</h3>
+                <p>Styling websites and creating responsive layouts.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICES SECTION -->
+    <section id="services" class="section">
+        <div class="section-heading">
+            <h2>My <span>Services</span></h2>
+            <p>Areas I am developing skills in</p>
+        </div>
+
+        <div class="services-container">
+            <div class="service-card">
+                <i class="fa-solid fa-computer"></i>
+                <h3>Computer Support</h3>
+                <p>Helping identify and troubleshoot basic computer hardware and software problems.</p>
+            </div>
+            <div class="service-card">
+                <i class="fa-solid fa-globe"></i>
+                <h3>Networking</h3>
+                <p>Learning network configuration, connectivity, and basic network troubleshooting.</p>
+            </div>
+            <div class="service-card">
+                <i class="fa-solid fa-code"></i>
+                <h3>Web Development</h3>
+                <p>Building simple websites using HTML, CSS, and JavaScript.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJECTS SECTION -->
+    <section id="projects" class="section">
+        <div class="section-heading">
+            <h2>My <span>Projects</span></h2>
+            <p>Some of the work I have completed and practiced</p>
+        </div>
+
+        <div class="projects-container">
+            <div class="project-card">
+                <div class="project-icon"><i class="fa-solid fa-laptop-code"></i></div>
+                <h3>Personal Portfolio</h3>
+                <p>A personal website created using HTML, CSS, and JavaScript to showcase my skills, services, and projects.</p>
+                <div class="project-actions">
+                    <a href="https://github.com/your-username/your-portfolio-repo" target="_blank" rel="noopener noreferrer" class="project-btn download-btn">
+                        <i class="fa-brands fa-github"></i> View GitHub Repo
+                    </a>
+                    <button class="project-btn view-code-btn" id="viewCodeBtn" type="button">
+                        <i class="fa-solid fa-code"></i> View Source Code
+                    </button>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-icon"><i class="fa-solid fa-network-wired"></i></div>
+                <h3>Network Topology</h3>
+                <p>A networking practice project involving network devices, connections, IP addresses, and testing connectivity using Cisco Packet Tracer.</p>
+                <div class="project-actions">
+                    <a href="files/network-topology.pkt" class="project-btn download-btn" download="network-topology.pkt">
+                        <i class="fa-solid fa-download"></i> Download .PKT File
+                    </a>
+                    <button class="project-btn view-file-btn" data-project="network" type="button">
+                        <i class="fa-solid fa-file-lines"></i> View Documentation
+                    </button>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-icon"><i class="fa-brands fa-linux"></i></div>
+                <h3>Linux Commands</h3>
+                <p>A Linux practice project involving terminal commands, directory creation, file management, and navigation.</p>
+                <div class="project-actions">
+                    <button class="project-btn view-file-btn" data-project="linux" type="button">
+                        <i class="fa-solid fa-terminal"></i> View Command Guide
+                    </button>
+                    <a href="files/linux-cheatsheet.txt" class="project-btn download-btn" download="linux-cheatsheet.txt">
+                        <i class="fa-solid fa-download"></i> Download Script
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="section">
+        <div class="section-heading">
+            <h2>Contact <span>Me</span></h2>
+            <p>Get in touch</p>
+        </div>
+
+        <div class="contact-container">
+            <div class="contact-info">
+                <i class="fa-solid fa-envelope"></i>
+                <h3>Email</h3>
+                <p>Send me an email to get in touch.</p>
+                <a href="mailto:your-email@example.com">Send Email</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>&copy; 2026 Tevon Bartley. All Rights Reserved.</p>
+    </footer>
+
+    <!-- SOURCE CODE MODAL -->
+    <div class="code-modal" id="codeModal" role="dialog" aria-modal="true" aria-hidden="true">
+        <div class="code-window">
+            <div class="code-header">
+                <h2>Personal Portfolio Source Code</h2>
+                <button class="close-code" id="closeCodeBtn" type="button">&times;</button>
+            </div>
+            <div class="code-tabs">
+                <button class="code-tab active" data-file="html" type="button">HTML</button>
+                <button class="code-tab" data-file="css" type="button">CSS</button>
+                <button class="code-tab" data-file="js" type="button">JavaScript</button>
+            </div>
+            <pre class="code-display"><code id="codeContent">Select a tab to view the source code.</code></pre>
+        </div>
+    </div>
+
+    <!-- External JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>

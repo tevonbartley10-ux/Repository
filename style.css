@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
 
-/* GENERAL RESET */
+
 * {
     padding: 0;
     margin: 0;
@@ -30,7 +30,7 @@ section {
     display: block;
 }
 
-/* NAVIGATION */
+
 nav {
     width: 100%;
     height: 75px;
@@ -192,7 +192,7 @@ nav {
     box-shadow: 0 0 15px rgba(137, 207, 240, 0.5);
 }
 
-/* DOWNLOAD CV BUTTON */
+
 .btn.download-btn {
     display: inline-flex;
     align-items: center;
@@ -214,7 +214,7 @@ nav {
     box-shadow: 0 0 20px rgba(137, 207, 240, 0.6);
 }
 
-/* PORTRAIT & GLOW RING */
+
 .image-wrapper {
     position: relative;
     display: flex;
